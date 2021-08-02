@@ -132,4 +132,4 @@ dmypy.json
 .db.sqlite3
 
 # Program settings
-.SECRET_KEY.py
+SECRET_KEY.py
