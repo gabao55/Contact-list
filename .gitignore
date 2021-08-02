@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Program database
+.db.sqlite3
+
+# Program settings
+.contact_list/settings.py
