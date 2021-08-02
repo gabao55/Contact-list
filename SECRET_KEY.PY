@@ -1,1 +1,0 @@
-key = 'django-insecure-ez!zf_+i@2@3xd$!88cy$)!4!=yg0=ym#c3mv#&@tpry2#z+vw'
