@@ -131,4 +131,6 @@ dmypy.json
 # Program database
 .db.sqlite3
 
+# Secret key
+SECRET_KEY.py
 
