@@ -13,30 +13,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>
-            <a href="#"> Peter</a>
-          </td>
-          <td>Smith</td>
-          <td>35 9 5555-5555</td>
-          <td>Family</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#"> Leonard</a>
-          </td>
-          <td>Griffin</td>
-          <td>35 9 8888-5555</td>
-          <td>Family</td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#"> Fátima</a>
-          </td>
-          <td>Oliveira</td>
-          <td>35 9 9999-4352</td>
-          <td>Colleague</td>
-        </tr>
+        {% for contact in contacts %}
+          <tr>
+            <td>
+              <a href="#">{{ contact.name }}</a>
+            </td>
+            <td>{{ contact.surname }}</td>
+            <td>{{ contact.telephone }}</td>
+            <td>{{ contact.category }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
 {%endblock%}
