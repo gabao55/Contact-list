@@ -15,7 +15,7 @@
         {% for contact in contacts %}
           <tr>
             <td>
-              <a href="{% url 'view_contact' contact.id %}">{{ contact.name }}</a>
+              <a href="{% url 'view_contact' contact.id %}" target="_blank">{{ contact.name }}</a>
             </td>
             <td>{{ contact.surname }}</td>
             <td>{{ contact.telephone }}</td>

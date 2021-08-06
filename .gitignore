@@ -133,4 +133,3 @@ dmypy.json
 
 # Secret key
 SECRET_KEY.py
-
