@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{%block title%}Register | {%endblock%}
+
+{% block content %}
+<h1 class="mt-3 mb-3">Register</h1>
+<form method="POST" action="{% url 'register' %}">
+      {% include 'partial/_messages.html' %}
+      {% csrf_token %}
+  <div class="form-group">
+    <label for="name">First name</label>
+    <input class="form-control" id="name" aria-describedby="nameHelp"
+           value="{{ request.POST.name }}" placeholder="Enter first name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="surname">Last name</label>
+    <input class="form-control" id="surname" aria-describedby="surnameHelp"
+           value="{{ request.POST.surname }}" placeholder="Enter last name" name="surname">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+           value="{{ request.POST.email }}" placeholder="Enter email" name="email">
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input class="form-control" id="username" aria-describedby="usernameHelp"
+           value="{{ request.POST.username }}" placeholder="Enter username" name="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password"
+    name="password">
+  </div>
+  <div class="form-group">
+    <label for="repeatpassword">Repeat Password</label>
+    <input type="password" class="form-control" id="repeatpassword" placeholder="Password"
+    name="repeatpassword">
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+{% endblock %}

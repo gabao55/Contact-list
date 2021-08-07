@@ -4,7 +4,7 @@
 
 <head>
 
-  <title>Agenda</title>
+  <title>{%block title%}{%endblock%}Contact Book</title>
   {% include 'partial/_head.html' %}
 
 </head>
@@ -18,18 +18,22 @@
     <div class="row">
       <div class="col-lg-12">
         <br><br>
-        <form method="get" action="{% url 'search' %}">
-          <div class="form-group row">
-            <div class="col-12">
-              <input class="form-control"
-                     type="search" value="{{ request.GET.term }}"
-                     id="search-input"
-                     placeholder="Digite sua pesquisa"
-                     name="term">
-                {% include 'partial/_messages.html' %}
+
+        {% if 'accounts' not in request.path %}
+          <form method="get" action="{% url 'search' %}">
+            <div class="form-group row">
+              <div class="col-12">
+                <input class="form-control"
+                       type="search" value="{{ request.GET.term }}"
+                       id="search-input"
+                       placeholder="Digite sua pesquisa"
+                       name="term">
+                  {% include 'partial/_messages.html' %}
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        {% endif %}
+
         {%block content%}{%endblock%}
       </div>
     </div>
