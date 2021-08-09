@@ -128,8 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Program database
-.db.sqlite3
-
 # Secret key
 SECRET_KEY.py
+
+# Visitor infos
+visitor_infos.txt
