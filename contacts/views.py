@@ -34,7 +34,7 @@ def search(request):
     term = request.GET.get('term')
 
     if term is None or not term:
-        messages.add_message(request, messages.ERROR, 'This field must not be empty for searches.')
+        messages.add_message(request, messages.ERROR, 'This field must not be empty for researches.')
         return redirect('index')
 
     fields = Concat('name', Value(' '), 'surname')
