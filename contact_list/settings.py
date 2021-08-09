@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from SECRET_KEY import key
 from django.contrib.messages import constants
 import django_heroku
 
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = key
+SECRET_KEY = 'ay2l9#7(36#!5xge7x-hwngw-tqj&*uic2lo_=(dexc7rv&9qm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
