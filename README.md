@@ -7,4 +7,4 @@ For seeing more details about each contact, you should just click on his/her nam
    <li>Password: callinbook
 </ul>
 
-The website was deployed using heroku platform and you can access it by clicking <a href="https://callinbook.herokuapp.com/">here</a>.
+The website was deployed using heroku platform and you can access it by clicking <a href="https://callinbook.herokuapp.com/" target="_blank">here</a>.
